@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Tracker - Formulier</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Login scherm -->
+  <div id="login-container" class="flex items-center justify-center h-screen">
+    <div class="login-box">
+      <h1>Case Tracker Login</h1>
+      <input type="password" id="companyCode" placeholder="Bedrijfscode">
+      <button id="loginBtn">Inloggen</button>
+      <p id="loginError" class="hidden">Ongeldige code</p>
+    </div>
+  </div>
+
+  <!-- Hoofd app -->
+  <div id="app" class="hidden">
+    <header class="flex gap-2 mb-4">
+      <input type="text" id="searchInput" placeholder="Zoek op naam of dossiernummer" class="flex-1 px-2 py-1 border rounded">
+      <button id="addBtn" class="px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700">Nieuw dossier</button>
+    </header>
+    <div id="formContainer" class="hidden bg-white p-4 rounded border mb-4">
+      <h2>Nieuw Dossier</h2>
+      <label>Naam:</label>
+      <input type="text" id="formName" placeholder="Vul naam in">
+      <label>Beschrijving:</label>
+      <textarea id="formDesc" placeholder="Beschrijving"></textarea>
+      <label>Reden / Waarom:</label>
+      <textarea id="formReason" placeholder="Waarom dit dossier"></textarea>
+      <button id="saveBtn" class="mt-2 px-3 py-1 bg-green-600 text-white rounded hover:bg-green-700">Opslaan</button>
+    </div>
+    <div id="listContainer"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

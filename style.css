@@ -1,0 +1,52 @@
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+}
+
+.hidden { display: none; }
+
+/* Login */
+.login-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 300px;
+}
+.login-box input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.login-box button {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #1d4ed8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.login-box button:hover {
+  background-color: #2563eb;
+}
+.login-box p { color: red; }
+
+/* App */
+#app { padding: 1rem; max-width: 800px; margin: auto; }
+header { display: flex; gap: 0.5rem; margin-bottom: 1rem; }
+header input { flex: 1; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px; }
+header button { padding: 0.5rem; background-color: #1d4ed8; color: white; border: none; border-radius: 4px; cursor: pointer; }
+header button:hover { background-color: #2563eb; }
+
+.case-card { background: white; padding: 1rem; margin-bottom: 1rem; border-radius: 6px; border: 1px solid #ccc; }
+.case-card .buttons { margin-top: 0.5rem; display: flex; gap: 0.5rem; }
+.case-card .buttons button { padding: 0.25rem 0.5rem; border-radius: 4px; border: 1px solid #ccc; cursor: pointer; }
+.case-card .buttons button.status { background-color: #22c55e; color: white; border: none; }
+.case-card .buttons button.status.closed { background-color: #ef4444; }
+.case-card .buttons button.delete { color: red; }
